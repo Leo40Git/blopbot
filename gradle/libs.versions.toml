@@ -1,0 +1,33 @@
+[versions]
+kotlin = "2.1.21"
+ksp = "2.1.21-2.0.1"
+
+groovy = "3.0.25"
+jansi = "2.4.2"
+kx-ser = "1.9.0"
+logback = "1.5.18"
+logback-groovy = "1.14.5"
+logging = "7.0.13"
+kordex-i18n = "1.1.1"
+kordex-gradle = "1.9.0"
+kordex = "2.4.1-SNAPSHOT"
+
+[libraries]
+groovy = { module = "org.codehaus.groovy:groovy", version.ref = "groovy" }
+jansi = { module = "org.fusesource.jansi:jansi", version.ref = "jansi" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }
+kx-ser = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kx-ser" }
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+logback-groovy = { module = "io.github.virtualdogbert:logback-groovy-config", version.ref = "logback-groovy" }
+logging = { module = "io.github.oshai:kotlin-logging", version.ref = "logging" }
+kordex-i18n = { module = "dev.kordex.i18n:i18n", version.ref = "kordex-i18n" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+kordex-docker = { id = "dev.kordex.gradle.docker", version.ref = "kordex-gradle" }
+kordex-i18n = { id = "dev.kordex.gradle.i18n", version.ref = "kordex-i18n" }
+kordex-plugin = { id = "dev.kordex.gradle.kordex", version.ref = "kordex-gradle" }
+ksp-plugin = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+

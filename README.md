@@ -1,3 +1,3 @@
 # BlopBot
 
-A custom bot for Sophie's private Discord server.
+A custom bot for Sophia's private Discord server.
